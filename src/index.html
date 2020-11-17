@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script>window.$ = window.jQuery = require('./js/jquery-3.5.1.min.js');</script>
+    <script src="js/semantic.min.js"></script>
+    <title>Calculadora de Juros Simples</title>
+</head>
+
+<body>
+    <div class="ui middle aligned center grid">
+        <div class="column">
+            <h1 class="ui header center aligned">Calculadora de Juros</h1>
+            <form class="ui form">
+                <div class="field">
+                    <label>Base de cálculo</label>
+                    <div class="ui left labeled input">
+                        <label for="base-calc" class="ui label">$</label>
+                        <input type="text" id="base-calc">
+                    </div>
+                </div>
+                <div class="field">
+                    <label>Percentual</label>
+                    <div class="ui left labeled input">
+                        <label for="percent" class="ui label">%</label>
+                        <input type="text" id="percent">
+                    </div>
+                </div>
+                <div class="field">
+                    <label>Data inicial</label>
+                    <div class="ui left labeled input">
+                        <label for="date-ini" class="ui label">*</label>
+                        <input type="date" id="date-ini">
+                    </div>
+                </div>
+                <div class="field">
+                    <label>Data final</label>
+                    <div class="ui left labeled input">
+                        <label for="date-end" class="ui label">*</label>
+                        <input type="date" id="date-end">
+                    </div>
+                </div>
+                <div class="ui divider"></div>
+                <div class="field">
+                    <label>Resultado</label>
+                    <div class="ui left labeled input">
+                        <label for="result" class="ui label">=</label>
+                        <input type="text" id="result">
+                    </div>
+                </div>
+                <button class="fluid ui primary button" id="calc">Calcular</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
