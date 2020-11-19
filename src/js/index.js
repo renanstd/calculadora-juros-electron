@@ -1,4 +1,5 @@
 $(function () {
+
     /* Botão calcular */
     $('#calc').click(function (event) {
         event.preventDefault();
@@ -12,8 +13,8 @@ $(function () {
         const utc_date_ini = Date.UTC(data_ini.getFullYear(), data_ini.getMonth(), data_ini.getDate())
         const utc_date_fim = Date.UTC(data_fim.getFullYear(), data_fim.getMonth(), data_fim.getDate())
         const periodo = Math.floor((utc_date_fim - utc_date_ini) / _MS_PER_DAY);
-        // Cálculo do resultado
         const periodo_mensal = parseInt(periodo / 30)
+        // Cálculo do resultado
         const rendimento = base_calculo * porcentagem * periodo_mensal;
         const resultado = base_calculo + rendimento;
 
